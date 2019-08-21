@@ -1,2 +1,2 @@
 # UK-News
-UK News Api with React with Class Components
+UK News Api React with Class Components
