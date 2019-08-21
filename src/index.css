@@ -5,7 +5,8 @@ body {
 }
 
 body {
-  background-color: #616161;
+  background: linear-gradient(rgba(5, 5, 5, 0.829), rgba(24, 31, 37, 0.808)), url(./images/newspapers.jpg);;
+  
 }
 .card-content h3 {
   font-size: 1.4rem;
