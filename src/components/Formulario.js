@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import PropTypes from 'prop-types';
 class Formulario extends Component {
     state = { 
         categoria : 'general'
@@ -18,8 +18,8 @@ class Formulario extends Component {
 
     render() { 
         return ( 
-            <div className="buscador row">
-                <div className="col s12 m8 offset-m2">
+            <div className="buscador row grey lighten">
+                <div className="col s12 m8 offset-m2 ">
                     <form>
                         <h2>Find News by Category</h2>
                         <div className="input-field col s12 m8 offset-m2">
@@ -44,5 +44,9 @@ class Formulario extends Component {
         );
     }
 }
- 
+
+Formulario.propTypes = {
+    consultarNoticias : PropTypes.func.isRequired
+}
+
 export default Formulario;

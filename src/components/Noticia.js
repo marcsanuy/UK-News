@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Noticia = ({noticia}) => {
     
@@ -17,7 +18,7 @@ const Noticia = ({noticia}) => {
     
     return ( 
        <div className="col s12 m6">
-           <div className="card">
+           <div className="card grey lighten-2">
                {imagen}
               
             <div className="card-content">
@@ -26,7 +27,7 @@ const Noticia = ({noticia}) => {
             </div>
 
             <div className="card-action">
-                <a href={url} target="_blank" rel="noopener noreferrer" className="waves-effect waves-light btn">
+                <a href={url} target="_blank" rel="noopener noreferrer" className="grey darken-3 btn">
                     See full news
                 </a>
             </div>
@@ -34,6 +35,10 @@ const Noticia = ({noticia}) => {
            </div>
        </div>
      );
+}
+
+Noticia.propTypes = {
+    noticia : PropTypes.object.isRequired
 }
  
 export default Noticia;

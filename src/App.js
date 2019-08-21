@@ -29,10 +29,10 @@ class App extends Component {
     return (  
       <Fragment>
         <Header
-        titulo="UK News with React"
+        titulo="UK NEWS"
         />
 
-        <div className="container white contenedor-noticias">
+        <div className="container grey lighten-1 contenedor-noticias">
           <Formulario 
           consultarNoticias={this.consultarNoticias}
           />
