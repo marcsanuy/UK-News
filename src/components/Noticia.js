@@ -11,7 +11,6 @@ const Noticia = ({noticia}) => {
     const imagen = (urlToImage) ? 
         <div className="card-image">
             <img src={urlToImage} alt={title} />
-            <span className="card-title">{source.name}</span>
         </div>
     
     : null;
